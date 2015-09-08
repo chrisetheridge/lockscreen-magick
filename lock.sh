@@ -15,7 +15,7 @@ screencapture ${STORAGE_DIR}/screen.png
 cd ${STORAGE_DIR}/
 
 # Blur the screenshot image using ImageMagick
-# NSTexturedFullScreenBackgroundColor.png is the name for the login screen
+# com.apple.desktop.admin.png is the name for the login screen
 convert -resize 5% screen.png screensized.png
 convert -resize 1000% screensized.png com.apple.desktop.admin.png
 
