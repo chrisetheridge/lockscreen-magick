@@ -12,5 +12,13 @@ Make a directory called `screenshots` in `~/tmp/screenshots`. Then run the scrip
 
 You can change the percentage values that are used in the `convert` command. I suggest not going above **20%** for the `resize` command as it takes quite a while.
 
+### Dependencies ###
+
+Make sure to install `ImageMagick`.
+
+You can installed with brew - `brew install ImageMagick`
+
+Or go to the [site](http://www.imagemagick.org/script/binary-releases.php)
+
 ### Example Image ###
 ![Example image](http://i.imgur.com/87zBEq5.jpg)
