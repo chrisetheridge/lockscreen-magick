@@ -1,6 +1,13 @@
 #!/bin/bash
 # Lockscreen script
 
+
+if [ -z $(which convert) ]; then
+  echo 'You need to install ImageMagick'
+  echo "This needs the command 'convert' from it."
+  exit 1
+fi
+
 # remove old screen
 rm -r ~/tmp/screenshots/screen.png
 
