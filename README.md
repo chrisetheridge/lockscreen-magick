@@ -1,10 +1,12 @@
-# Blurred Lockscreen script
+# Blurred Lockscreen Script
 
-A simple script that takes a screenshot, blurs it, sets it as the lockscreen, and locks the computer.
+I made a very **simple** lockscreen script, which takes a screenshot of your current desktop and blurs it, and sets this as the lockscreen.
 
-To run simply do 'sudo ./lock.sh'
+It overwrites your current lockscreen picture but does save it as `bak.png`, in the same directory as the screenshots.
 
-All screenshots are stored in ~/tmp/screenshots/
+### How to Use ###
 
+Make a directory called `screenshots` in `~/tmp/screenshots`. Then run the script with `sudo`. Sudo is needed to overwrite the old lockscreen image.
 
-NOTE: You may have to make a 'screenshots' in ~/tmp/
+### Example Image ###
+![Example image](http://i.imgur.com/87zBEq5.jpg)
