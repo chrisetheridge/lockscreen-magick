@@ -16,7 +16,10 @@ convert -resize 5% screen.png screensized.png
 convert -resize 1000% screensized.png com.apple.desktop.admin.png
 
 # backup old lock screen picture
-cp /Library/Caches/com.apple.desktop.admin.png ~/tmp/screenshots/bak.png
+# check if it already exists to not overwrite
+if [ !  -f ~/tmp/screenshots/bak.png ]; then
+  cp /Library/Caches/com.apple.desktop.admin.png ~/tmp/screenshots/bak.png
+fi
 
 # replace the old lock screen picture with the new blurred one
 cp com.apple.desktop.admin.png /Library/Caches/com.apple.desktop.admin.png
