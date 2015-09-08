@@ -2,6 +2,8 @@
 # Lockscreen script
 
 STORAGE_DIR=${HOME}'/tmp/screenshots'
+test -e ${STORAGE_DIR} || mkdir ${STORAGE_DIR}
+
 
 # remove old screen
 rm -r ${STORAGE_DIR}/screen.png
