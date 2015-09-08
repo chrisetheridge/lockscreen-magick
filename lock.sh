@@ -1,6 +1,13 @@
 #!/bin/bash
 # Lockscreen script
 
+# check if convert (image magick) is installed
+if [ -z $(which convert) ]; then
+  echo 'You need to install ImageMagick'
+  echo "This needs the command 'convert' from it."
+  exit 1
+fi
+
 STORAGE_DIR=${HOME}'/tmp/screenshots'
 test -e ${STORAGE_DIR} || mkdir ${STORAGE_DIR}
 
