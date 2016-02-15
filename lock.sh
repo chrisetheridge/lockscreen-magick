@@ -9,6 +9,7 @@ if [ -z $(which convert) ]; then
 fi
 
 STORAGE_DIR=${HOME}'/tmp/screenshots'
+
 test -e ${STORAGE_DIR} || mkdir -p ${STORAGE_DIR}
 
 # remove old screen
@@ -20,7 +21,7 @@ screencapture ${STORAGE_DIR}/screen.png
 # cd into screenshots
 cd ${STORAGE_DIR}/
 
-# Blur the screenshot image using ImageMagick
+# blur the image
 # com.apple.desktop.admin.png is the name for the login screen
 convert -resize 5% screen.png screensized.png
 convert -resize 1000% screensized.png com.apple.desktop.admin.png
