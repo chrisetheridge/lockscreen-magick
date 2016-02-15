@@ -8,6 +8,14 @@ if [ -z $(which convert) ]; then
     exit 1
 fi
 
+# check if input image or screenshot
+
+# timeout if timeout option
+
+# check effects
+
+# default effect is blur
+
 STORAGE_DIR=${HOME}'/tmp/screenshots'
 
 test -e ${STORAGE_DIR} || mkdir -p ${STORAGE_DIR}
@@ -18,10 +26,9 @@ rm -r ${STORAGE_DIR}/screen.png
 # take a screenshot
 screencapture ${STORAGE_DIR}/screen.png
 
-# cd into screenshots
+# cd into screenshots dir
 cd ${STORAGE_DIR}/
 
-# blur the image
 # com.apple.desktop.admin.png is the name for the login screen
 convert -resize 5% screen.png screensized.png
 convert -resize 1000% screensized.png com.apple.desktop.admin.png
