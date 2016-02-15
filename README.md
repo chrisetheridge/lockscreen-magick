@@ -1,6 +1,11 @@
-# Blurred Lockscreen Script
+# Lockscreen Magick
 
-I made a very **simple** lockscreen script, which takes a screenshot of your current desktop and blurs it, and sets this as the lockscreen.
+Lockscreen Magick is a script that uses [ImageMagick](http://www.imagemagick.org/script/binary-releases.php) to take a
+screenshot (or input file) of your desktop and add effects to it. It
+then takes this transformed image and sets it as the Login Background,
+which is effectively your lockscreen.
+
+Currently only supports OSX.
 
 It overwrites your current lockscreen picture but does save it as `bak.png`, in the same directory as the screenshots.
 
@@ -31,3 +36,4 @@ Or go to the [site](http://www.imagemagick.org/script/binary-releases.php)
 - Add optiona parameter for an additional output directory so that the
 screenshot can be saved elsewhere
 - Add scrot-like time out / count down function
+- Add 'random' feature

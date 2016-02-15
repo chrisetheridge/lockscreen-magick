@@ -11,7 +11,6 @@ fi
 STORAGE_DIR=${HOME}'/tmp/screenshots'
 test -e ${STORAGE_DIR} || mkdir -p ${STORAGE_DIR}
 
-
 # remove old screen
 rm -r ${STORAGE_DIR}/screen.png
 
