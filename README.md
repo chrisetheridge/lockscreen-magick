@@ -22,3 +22,12 @@ Or go to the [site](http://www.imagemagick.org/script/binary-releases.php)
 
 ### Example Image ###
 ![Example image](http://i.imgur.com/87zBEq5.jpg)
+
+
+### Todo ###
+
+- Introduce new ways to distort the image
+- Add parameters for blur / distort amount
+- Add optiona parameter for an additional output directory so that the
+screenshot can be saved elsewhere
+- Add scrot-like time out / count down function
