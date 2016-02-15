@@ -3,9 +3,9 @@
 
 # check if convert (image magick) is installed
 if [ -z $(which convert) ]; then
-  echo 'You need to install ImageMagick'
-  echo "This needs the command 'convert' from it."
-  exit 1
+    echo 'You need to install ImageMagick'
+    echo "This needs the command 'convert' from it."
+    exit 1
 fi
 
 STORAGE_DIR=${HOME}'/tmp/screenshots'
@@ -29,7 +29,7 @@ convert -resize 1000% screensized.png com.apple.desktop.admin.png
 # backup old lock screen picture
 # check if it already exists to not overwrite
 if [ !  -f ${STORAGE_DIR}/bak.png ]; then
-  cp /Library/Caches/com.apple.desktop.admin.png ~${STORAGE_DIR}/bak.png
+    cp /Library/Caches/com.apple.desktop.admin.png ${STORAGE_DIR}/bak.png
 fi
 
 # replace the old lock screen picture with the new blurred one
