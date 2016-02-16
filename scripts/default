@@ -1,0 +1,7 @@
+#!/bin/bash
+# default blur
+
+# params
+
+convert -resize 5% screen.png screensized.png
+convert -resize 1000% screensized.png com.apple.desktop.admin.png
