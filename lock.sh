@@ -1,5 +1,4 @@
 #!/bin/bash
-# Lockscreen script
 
 # check if convert (image magick) is installed
 if [ -z $(which convert) ]; then
@@ -8,7 +7,15 @@ if [ -z $(which convert) ]; then
     exit 1
 fi
 
+# variables
+SCRIPTS_DIR='/scripts'
+use_screenshot=false
+random_magic=false
+default_magic=true
+countown=0
+
 # check if input image or screenshot
+
 
 # timeout if timeout option
 
