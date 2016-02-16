@@ -36,10 +36,6 @@ screencapture ${STORAGE_DIR}/screen.png
 # cd into screenshots dir
 cd ${STORAGE_DIR}/
 
-# com.apple.desktop.admin.png is the name for the login screen
-convert -resize 5% screen.png screensized.png
-convert -resize 1000% screensized.png com.apple.desktop.admin.png
-
 # backup old lock screen picture
 # check if it already exists to not overwrite
 if [ !  -f ${STORAGE_DIR}/bak.png ]; then
