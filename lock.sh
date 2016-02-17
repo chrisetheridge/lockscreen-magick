@@ -14,6 +14,9 @@ random_magic=false
 default_magic=true
 countown=0
 
+# get params
+
+
 # check if input image or screenshot
 
 
@@ -21,10 +24,9 @@ countown=0
 
 # check effects
 
-# default effect is blur
-
 STORAGE_DIR=${HOME}'/tmp/screenshots'
 
+# check we have a storage dir / storage dir provided
 test -e ${STORAGE_DIR} || mkdir -p ${STORAGE_DIR}
 
 # remove old screen
