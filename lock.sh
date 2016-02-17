@@ -16,6 +16,53 @@ countown=0
 
 # get params
 
+while :; do
+    case $1 in
+        -h|-\?|--help)
+            # help
+            exit
+            ;;
+        -e|--effect)
+            if [ -n "$2" ]; then
+                # imagemagick effect opt
+                shift
+            else
+                printf 'ERROR: "--file" requires a non-empty option argument.\n' >&2
+                exit 1
+            fi
+            ;;
+        --default)
+            # default
+            ;;
+        -s|--script)
+            # specify script
+            ;;
+        -t|--timeout)
+            # specify some timeout
+            ;;
+        -o|--output)
+            # specify some output file
+            ;;
+        -r|--random)
+            # random
+            ;;
+        -i|--input)
+            # input image
+            ;;
+        --)
+            shift
+            break
+            ;;
+        -?*)
+            printf 'WARN: Unknown option (ignored): %s\n' "$1" >&2
+            ;;
+        *)               # Default case: If no more options then break out of the loop.
+            break
+    esac
+
+    shift
+done
+
 
 # check if input image or screenshot
 
